@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>My Website</title>
+    
+    <style>
+        body {
+    background-color: white;
+    color: black;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+     position: sticky;
+    top:0;
+
+    z-index: 1000; 
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #ccc;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.icons .icon {
+    width: 24px;
+    height: 27px;
+    margin-left: 10px;
+}
+
+.slider {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    height: 400px;
+}
+
+.slide {
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.products {
+    display: flex;
+    justify-content:space-around;
+    padding: 20px;
+    
+    flex-wrap:wrap-2;
+    
+    margin:15px;  
+}
+
+.product-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+}
+.icon2
+{
+    mix-blend-mode:multiply;
+     margin-top:15px; 
+
+     width:35px;  
+     height:35px; 
+     font-weight:bold;  
+}
+.icone2
+{
+    mix-blend-mode:multiply;
+
+}
+.b1{
+    background-color:black;
+    color:white; 
+    width:85px;
+    font-size:12px;
+    font-weight:bold;
+    border-radius:5px;    
+}
+img:hover
+{
+ transform: scale(1.2);
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f1f1f1;
+    border-top: 1px solid #ccc;
+}
+  footer{
+    background-color:black;
+    color:white;
+    
+
+  }
+
+footer .social-media a {
+    margin-right: 10px;
+    color:white;
+}
+
+footer .info p {
+    margin: 0;
+    padding: 0 10px;
+    color:white;
+}
+}
+@media only screen and(max-width:400px)
+{
+
+    .slider {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    height: 400px;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">ALL BRNADS</div>
+        <div class="icons">
+            <img src="cart.png" alt="Cart Icon" class="icon">
+            <a href="login.html">
+            <img src="user.png" alt="login.html" class="icon2">
+        </a>
+        </div>
+    </header>
+
+    <div class="slider">
+        <img src="j.jpg" alt="Brand 1" class="slide">
+        <img src="puma.jpg" alt="Brand 2" class="slide">
+        <img src="red2.jpg" alt="Brand 3" class="slide">
+        <img src="HM.jpg" alt="Brand 3" class="slide">
+    </div>
+      <h1>Fashion For Men and Women</h1>
+    <div class="products">
+        <div class="product-card">
+            <img src="us.jpg" alt="Product 1" width="160px">
+            <p><b>US POLO</b></p>
+            <p>$50</p>
+             <button class="b1">Buy Now</button>
+        </div>
+        <div class="product-card">
+            <img src="canta.webp" alt="Product 2" width="160px" height="210px">
+            <p><b>Cantabel</b></p>
+            <p>$50</p>
+            <button class="b1">Buy Now</button>
+        </div>
+        
+    </div>
+    <div class="products">
+        <div class="product-card">
+            <img src="nike.jpg" alt="Product 1" width="160px" height="210px">
+            <p><b>NIKE TOP</b>Girls</p>
+            <p>$40</p>
+             <button class="b1">Buy Now</button>
+        </div>
+        <div class="product-card">
+            <img src="ava.jpg" alt="Product 2" width="160px" height="210px">
+            <p><b>AVIL Shits</b></p>
+            <p>$50</p>
+            <button class="b1">Buy Now</button>
+        </div>
+        
+    </div>
+    <!--------sec2--->
+    <h1> Accessories For Men and Women</h1>
+    <div class="products">
+        <div class="product-card">
+            <img src="CONTENA.WEBP" alt="Product 1" width="160px" height="210px">
+            <p><b>US POLO</b></p>
+            <p>$50</p>
+             <button class="b1">Buy Now</button>
+        </div>
+        <div class="product-card">
+            <img src="pumas.webp" alt="Product 2" width="160px" height="210px">
+            <p><b>Puma Shoes</b></p>
+            <p>$50</p>
+            <button class="b1">Buy Now</button>
+        </div>
+
+        
+    </div>
+    <div class="products">
+        <div class="product-card">
+            <img src="boat.jpg" alt="Product 1" width="160px" height="210px">
+            <p><b>NIKE TOP</b>Girls</p>
+            <p>$40</p>
+             <button class="b1">Buy Now</button>
+        </div>
+        <div class="product-card">
+            <img src="noisew.gif" alt="Product 2" width="160px" height="210px">
+            <p><b>Noise Smart Watch</b></p>
+            <p>$50</p>
+            <button class="b1">Buy Now</button>
+        </div>
+        
+    </div>
+    <!-------end--->
+
+
+    <footer>
+        <div class="social-media">
+            <ul>
+                <li>FaceBook</li>
+                <li>Instagram</li>
+                <li>Email</li>
+                <li>Cont</li>
+
+            </ul>
+        </div>
+        <div class="info">
+            <p>About Us</p>
+            <p>Contact Us</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

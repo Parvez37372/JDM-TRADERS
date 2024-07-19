@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Header</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#8a496b;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+}
+
+.logo img {
+    height: 40px;
+}
+
+nav {
+    display: flex;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+.menu li a:hover {
+    background-color: #575757;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 160px;
+}
+
+.dropdown-content li a {
+    padding: 10px 20px;
+}
+
+.dropdown-content li a:hover {
+    background-color: #575757;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .hamburger {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+/*------section-------*/
+.p1{
+    color:white;
+    background-color:#c19a6b;
+    color:white;
+    text-align:center;
+    font-family:sans-serif;  
+    width:265px; 
+    font-weight:bold;  
+}
+.p1:hover
+{
+  color:black;
+  background-color:#8a496b;
+  font-size:15px; 
+}
+.buton{
+    background-color:#c19a6b;
+    
+    color:white;
+    font-size:25px;
+    border:none; 
+    border-radius:4px;   
+}
+.buton:hover{
+    color:black;
+}
+  .main_page
+  ul
+  {
+        display:flex; 
+        width:100%;
+        justify-content:space-around;
+        list-style:none; 
+        flex-wrap:wrap;   
+   }
+
+.main_page 
+{
+  
+   padding:0px;
+   margin:0px;
+   background-image:url(img.jpeg);
+
+   width:100%;
+   height:100%; 
+}
+span a{
+    color:black;
+    font-size:65px;
+    font-family:Georgia,serif;
+    font-weight:bold; 
+    display:flex;
+    text-decoration:none; 
+
+    flex-wrap:wrap;   
+}
+.sofa img
+{
+border-radius:15px;
+mix-blend-mode:multiply;   
+}
+/*-----section-------end------------*/
+
+
+/*----section2-----*/
+.sec2 a
+{
+  color:white;
+  text-decoration:none; 
+}
+.sec2 ol
+{
+     display:flex;
+     text-decoration:none; 
+     justify-content:space-around; 
+     flex-wrap:wrap;  
+     list-style:none; 
+     padding-left:320px;  
+    
+}
+
+
+.redmore
+{
+  background-color:#c19a6b;
+    
+    color:white;
+    font-size:25px;
+    border:none; 
+    border-radius:4px; 
+    margin-right:210px; 
+
+}
+
+
+
+/*-------s2end---------*/
+@media only screen and (min-width:200px)and(max-width:767px)  
+{
+    section{
+        width:100%;
+
+         
+    }
+
+    
+    .menu-toggle {
+        display: flex;
+
+    }
+    
+    .menu {
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        display: none;
+
+    }
+    
+    .menu li {
+        width: 100%;
+        text-align: center;
+
+    }
+    
+    .menu li a {
+        padding: 15px 0;
+    }
+    
+    .dropdown-content {
+        position: static;
+        box-shadow: none;
+        background-color: #444;
+
+    }
+    
+    .dropdown-content li a {
+        padding: 10px 0;
+    }
+}
+@media (min-width:250px) {
+
+
+}
+
+@media (max-width: 1024px) {
+    .main_page {
+        padding: 10px;
+    }
+
+    .main_page li {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .main_page h1 span a {
+        font-size: 1.8em;
+    }
+
+    .main_page .button {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main_page {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main_page li:first-child {
+        order: 1;
+    }
+
+    .main_page li:last-child {
+        order: 2;
+    }
+
+    .main_page h1 span a {
+        font-size: 1.5em;
+    }
+
+    .main_page .button {
+        font-size: 0.8em;
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main_page {
+        padding: 5px;
+    }
+
+    .main_page li {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .main_page h1 span a {
+        font-size: 1.2em;
+    }
+
+    .main_page .button {
+        font-size: 0.7em;
+        padding: 4px 8px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h3>P37</h3>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#About">About Us</a></li>
+                <li class="dropdown">
+                    <a href="#ourproducts">Our Products</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#sofa">Sofa</a></li>
+                        <li><a href="#chair">Chair</a></li>
+                        <li><a href="#table">Table</a></li>
+                    </ul>
+                </li>
+                <li><a href="#ourgallery">Our Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle" id="menu-toggle">
+            <div class="hamburger"></div>
+        </div>
+    </header>
+    <section class="main_page">
+                 <ul>
+                    <li><p class="p1">WHERE STYLE MEAT COMFORT.</p>
+                         <br/>
+                         <h1>
+                    <span><a href="#">Welcome
+                    To<br/>
+                    ParNaaz<br/>
+                    FURNITURE.</a>
+                    </span>
+                </h1>
+                <p>Your Comfort and Aesthetic Design suitable for you is before anything else.
+                    <br/>
+                    <b>Parvez3737</b> website Desinger.
+                </p>
+                <button class="buton">Contact Us <i class="fa fa-arrow-right"></i></button>
+            
+                    </li>
+                    <li>
+                        
+                        <a href="#"><img src="k33.png" width="225px" height="205px"></a>
+            <a href="#"><img src="k.png" width="550px" height="500px"></a>
+                    </li>
+                    
+                 </ul>
+
+           </section>
+           
+
+           <section2 class="sec2">
+            <div class="main2" style="text-align:center;color:white">
+                <h2 id="About"><a href="#"><span style="color:white">About US</span></a></h2>
+               <ol>
+                <li><a href="#"><img src="k33.png" width="305px" height="405px" class="img2"></a></li>
+                <li><p><b>
+                   <br/> Kohinoor Steel & Wooden Furniture has been a Firm in the<br/>furniture business since 1952, a legacy that was initiated by<br/> 
+                   <br/> Kohinoor Steel & Wooden Furniture has been a Firm in the<br/>furniture business since 1952, a legacy that was initiated by<br/> 
+                   <br/> Kohinoor Steel & Wooden Furniture has been a Firm in the<br/>furniture business since 1952, a legacy that was initiated by<br/>
+                   <br/> Kohinoor Steel & Wooden Furniture has been a Firm in the<br/>furniture business since 1952, a legacy that was initiated by<br/> 
+                   <br/> Kohinoor Steel & Wooden Furniture has been a Firm in the<br/>furniture business since 1952, a legacy that was initiated by<br/> 
+
+                   <br/> Kohinoor Steel & Wooden Furniture has been a Firm in the<br/>furniture business since 1952, a legacy that was initiated by<br/> 
+                   <br/> Kohinoor Steel & Wooden Furniture has been a Firm in the<br/>furniture business since 1952, a legacy that was initiated by<br/> 
+
+                    </b></p>
+                          <button class="redmore"><a href="#">Read More.</a></button>
+          
+                </li>
+               </ol>
+                 
+
+
+              </div>
+               </section>
+
+    <script src="scripts.js"></script>
+
+</body>
+</html>

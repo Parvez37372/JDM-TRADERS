@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Account</title>
+    <style>
+        body {
+    background-color: white;
+    color: black;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-box, .signup-box {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.rs{
+    text-decoration:none;
+    font-weight:none;
+    color:white;
+    font-size:18px;   
+}
+
+button:hover {
+    background-color: #333;
+}
+form{
+    padding-right:13px;  
+}
+
+@media (max-width: 600px) {
+    .login-box, .signup-box {
+        width: 100%;
+    }
+}
+
+    </style>
+</head>
+<body>
+                 <div class="signup-box">
+            <h2>Create Account</h2>
+            <form id="signup-form">
+                <div class="input-group">
+                    <label for="username">Username/Email</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="phone">Phone No</label>
+                    <input type="text" id="phone" name="phone" required>
+                </div>
+                <div class="input-group">
+                    <label for="signup-password">Password</label>
+                    <input type="password" id="signup-password" name="signup-password" required>
+                </div>
+                <button type="submit" onclick="sub();"><a href="login.html" class="rs">Sign Up</button>
+            </form>
+        </div>
+        <script>
+          
+            function sub()
+            {
+                alter('Create Account Sucessfully.........');
+            }
+        </script>
+   
+</body>
+</html>
